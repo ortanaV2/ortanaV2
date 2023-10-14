@@ -5,4 +5,4 @@ languages = {"python", "c++", "c"}
 _________________________________
 Interests: networking, background-systems, computer-vision 
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ortana&theme=dark&show_icons=true)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ortanav2&theme=dark&show_icons=true)
