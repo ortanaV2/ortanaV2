@@ -4,5 +4,3 @@ languages = {"python", "c++", "c"}
 - Experience: 10m
 _________________________________
 Interests: networking, background-systems, computer-vision 
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ortanav2&theme=dark&show_icons=true)
