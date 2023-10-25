@@ -4,4 +4,4 @@
 > 
 > Experience: 10m
 _________________________________
-> Interests: networking, background-systems, computer-vision 
+> Interests: networking, simulations, computer-vision 
