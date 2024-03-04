@@ -1,5 +1,5 @@
 ### Welcome! 🤗
-`skills = ["python", "c++", "c"]`
-`age = 16`
-`experience = "+1y"`
+- Skills = [python, c++, c]
+- Age = 16
+- Experience = 1+ year 
 > _**Interests**_: networking, simulations, computer-vision
