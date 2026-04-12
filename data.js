@@ -30,6 +30,15 @@ const PORTFOLIO_DATA = {
     },
     {
       "id": 3,
+      "year": "2024",
+      "title": "Internship — Kapsch TrafficCom · Deep Learning",
+      "description": "Developed an automated data collection pipeline for a Computer Vision AI model at Kapsch TrafficCom's Deep Learning department. The script crawled footage from multiple video streaming sources, filtering recordings by conditions such as weather and time of day to build structured training datasets.",
+      "image": null,
+      "imageSize": "medium",
+      "tags": ["Python", "Computer Vision", "Deep Learning", "Internship"]
+    },
+    {
+      "id": 6,
       "year": "2025",
       "title": "Botball Competition — Innsbruck",
       "description": "My first hands-on experience with robotics and hardware development, competing at the Botball Competition in Innsbruck.",
@@ -38,7 +47,7 @@ const PORTFOLIO_DATA = {
       "tags": ["Robotics", "Competition"]
     },
     {
-      "id": 4,
+      "id": 7,
       "year": "2025",
       "title": "CanSat Competition by ESA — Linz",
       "description": "Gained practical experience in hardware design and aerospace engineering as part of the ESA CanSat Competition held in Linz.",
@@ -47,7 +56,16 @@ const PORTFOLIO_DATA = {
       "tags": ["Satellites", "Aerospace", "Competition"]
     },
     {
-      "id": 5,
+      "id": 8,
+      "year": "2025",
+      "title": "Internship — Kapsch TrafficCom · Deep Learning",
+      "description": "Returned to Kapsch TrafficCom's Deep Learning department for a second month-long internship, contributing to the deployment pipeline of an AI-powered video analytics platform. First hands-on exposure to DevOps practices, including CI/CD workflows and infrastructure automation.",
+      "image": null,
+      "imageSize": "medium",
+      "tags": ["DevOps", "Deep Learning", "Deployment", "Internship"]
+    },
+    {
+      "id": 9,
       "year": "2025",
       "title": "Austrian Federal AI Competition — Winner 🏆",
       "description": "A winner of the Austrian Federal Competition for Artificial Intelligence (BWKI by ASAI), receiving the prestigious \"AI for Green Award\".",
@@ -60,7 +78,7 @@ const PORTFOLIO_DATA = {
       "tags": ["AI", "Award", "Winner", "Competition"]
     },
     {
-      "id": 6,
+      "id": 10,
       "year": "2026",
       "title": "Robocup Open Soccer — 3rd Place 🥉",
       "description": "Secured 3rd place at the RoboCup Junior Austria in Innsbruck, competing in the 2v2 Open Soccer category. Designed and built a fully autonomous robot from the ground up, integrating Computer Vision and real-time decision-making.",
