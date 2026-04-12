@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ortana — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── HERO ── -->
+  <header class="hero">
+    <div class="hero__bg">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge">Portfolio</div>
+      <h1 class="hero__name" id="hero-name"></h1>
+      <p class="hero__tagline" id="hero-tagline"></p>
+      <p class="hero__bio" id="hero-bio"></p>
+      <div class="hero__skills" id="hero-skills"></div>
+      <div class="hero__links" id="hero-links"></div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="hero__scroll-arrow"></div>
+    </div>
+  </header>
+
+  <!-- ── TIMELINE ── -->
+  <main class="timeline-section">
+    <div class="timeline-label">
+      <span>Journey</span>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <p>Built with care &amp; hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
