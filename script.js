@@ -142,6 +142,114 @@ function initScrollAnimations() {
   document.querySelectorAll('.tl-entry').forEach(el => observer.observe(el));
 }
 
+function createCarousel(images) {
+  const wrap = document.createElement('div');
+  wrap.className = `proj-carousel${images.length === 0 ? ' proj-carousel--empty' : ''}`;
+
+  if (images.length === 0) return wrap;
+
+  // Track
+  const track = document.createElement('div');
+  track.className = 'proj-carousel__track';
+
+  images.forEach(src => {
+    const slide = document.createElement('div');
+    slide.className = 'proj-carousel__slide';
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = '';
+    img.loading = 'lazy';
+    slide.appendChild(img);
+    track.appendChild(slide);
+  });
+  wrap.appendChild(track);
+
+  if (images.length <= 1) return wrap;
+
+  let current = 0;
+  const total = images.length;
+
+  const dots = document.createElement('div');
+  dots.className = 'proj-carousel__dots';
+
+  const dotEls = images.map((_, i) => {
+    const d = document.createElement('div');
+    d.className = `proj-carousel__dot${i === 0 ? ' active' : ''}`;
+    d.addEventListener('click', () => goTo(i));
+    dots.appendChild(d);
+    return d;
+  });
+
+  function goTo(index) {
+    current = (index + total) % total;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dotEls.forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  const btnPrev = document.createElement('button');
+  btnPrev.className = 'proj-carousel__btn proj-carousel__btn--prev';
+  btnPrev.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>`;
+  btnPrev.addEventListener('click', () => goTo(current - 1));
+
+  const btnNext = document.createElement('button');
+  btnNext.className = 'proj-carousel__btn proj-carousel__btn--next';
+  btnNext.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>`;
+  btnNext.addEventListener('click', () => goTo(current + 1));
+
+  wrap.appendChild(btnPrev);
+  wrap.appendChild(btnNext);
+  wrap.appendChild(dots);
+  return wrap;
+}
+
+function createProjectCard(project, index) {
+  const card = document.createElement('div');
+  card.className = 'proj-card';
+  card.style.transitionDelay = `${(index % 3) * 0.1}s`;
+
+  card.appendChild(createCarousel(project.images || []));
+
+  const body = document.createElement('div');
+  body.className = 'proj-body';
+
+  const meta = document.createElement('div');
+  meta.className = 'proj-meta';
+  const date = document.createElement('span');
+  date.className = 'proj-date';
+  date.textContent = project.date;
+  meta.appendChild(date);
+  body.appendChild(meta);
+
+  const title = document.createElement('h3');
+  title.className = 'proj-title';
+  title.textContent = project.title;
+  body.appendChild(title);
+
+  const desc = document.createElement('p');
+  desc.className = 'proj-desc';
+  desc.textContent = project.description;
+  body.appendChild(desc);
+
+  card.appendChild(body);
+  return card;
+}
+
+function renderProjects(projects) {
+  const grid = document.getElementById('projects-grid');
+  if (!grid || !projects?.length) return;
+  projects.forEach((p, i) => grid.appendChild(createProjectCard(p, i)));
+}
+
 renderHero(PORTFOLIO_DATA.profile);
 renderTimeline(PORTFOLIO_DATA.timeline);
+renderProjects(PORTFOLIO_DATA.projects);
 initScrollAnimations();
+
+// Observe project cards too
+const projObserver = new IntersectionObserver(
+  entries => entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); projObserver.unobserve(e.target); }
+  }),
+  { threshold: 0.1 }
+);
+document.querySelectorAll('.proj-card').forEach(el => projObserver.observe(el));

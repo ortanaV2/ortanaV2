@@ -91,4 +91,42 @@ const PORTFOLIO_DATA = {
       "tags": ["Robotics", "Computer-Vision", "Winner", "Competition"]
     }
   ]
+  ,
+  "projects": [
+    {
+      "id": 1,
+      "title": "CPU Modules",
+      "date": "2024 · July",
+      "description": "A collection of discrete CPU building blocks — including registers, an instruction parser, and a 4-bit adder — assembled on a breadboard using only logic gates from standard integrated circuits.",
+      "images": ["images/cpu_1.jpg", "images/cpu_2.jpg", "images/cpu_3.jpg"]
+    },
+    {
+      "id": 2,
+      "title": "Sumobot",
+      "date": "2025 · June",
+      "description": "Three iterative prototypes of an autonomous Sumobot, inspired by Japanese Sumo robotics competitions. Each robot independently searches for opponents and pushes them out of the ring while staying within bounds.",
+      "images": ["images/sumobot_1.jpg", "images/sumobot_2.jpg", "images/sumobot_3.jpg", "images/sumobot_4.jpg", "images/sumobot_5.jpg"]
+    },
+    {
+      "id": 3,
+      "title": "Simulated 4-Bit CPU",
+      "date": "2025 · November",
+      "description": "A fully custom 4-bit CPU architecture designed from scratch and simulated in Falstad Circuit Simulator. Features its own instruction set and control logic, making it near Turing-complete.",
+      "images": ["images/4bitcpu.png"]
+    },
+    {
+      "id": 4,
+      "title": "Vector Controlled Rocket Engine",
+      "date": "2025 · December",
+      "description": "A butane/propane-powered rocket engine prototype with thrust vectoring, developed entirely from scratch. Designed for a theoretical thrust output of 5 kgf.",
+      "images": ["images/rocket_1.jpg", "images/rocket_2.jpg", "images/rocket_3.jpg"]
+    },
+    {
+      "id": 5,
+      "title": "Soccer Robot",
+      "date": "2026 · March",
+      "description": "An autonomous soccer robot capable of communicating with teammates and coordinating strategy in real time. Built for the RoboCup Junior Austria Open in Innsbruck, where I was solely responsible for all hardware development from the ground up.",
+      "images": ["images/robocup_2.jpg", "images/robocup_3.jpg", "images/robocup_4.jpg", "images/robocup_5.jpg", "images/robocup_6.jpg", "images/robocup_7.jpg", "images/robocup_8.jpg", "images/robocup_9.jpg"]
+    }
+  ]
 };
