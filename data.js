@@ -105,7 +105,7 @@ const PORTFOLIO_DATA = {
       "title": "Sumobot",
       "date": "2025 · June",
       "description": "Three iterative prototypes of an autonomous Sumobot, inspired by Japanese Sumo robotics competitions. Each robot independently searches for opponents and pushes them out of the ring while staying within bounds.",
-      "images": ["images/sumobot_1.jpg", "images/sumobot_2.jpg", "images/sumobot_3.jpg", "images/sumobot_4.jpg", "images/sumobot_5.jpg"]
+      "images": ["images/sumobot_1.jpg", "images/sumobot_2.jpg", "images/sumobot_3.jpg", "images/sumobot_4.jpg", "images/sumobot_5.jpg", "images/sumobot_6.jpg", "images/sumobot_7.jpg"]
     },
     {
       "id": 3,
@@ -119,14 +119,14 @@ const PORTFOLIO_DATA = {
       "title": "Vector Controlled Rocket Engine",
       "date": "2025 · December",
       "description": "A butane/propane-powered rocket engine prototype with thrust vectoring, developed entirely from scratch. Designed for a theoretical thrust output of 5 kgf.",
-      "images": ["images/rocket_1.jpg", "images/rocket_2.jpg", "images/rocket_3.jpg"]
+      "images": ["images/rocket_1.jpg", "images/rocket_2.jpg", "images/rocket_3.jpg", "images/rocket_4.jpg", "images/rocket_5.jpg"]
     },
     {
       "id": 5,
       "title": "Soccer Robot",
       "date": "2026 · March",
       "description": "An autonomous soccer robot capable of communicating with teammates and coordinating strategy in real time. Built for the RoboCup Junior Austria Open in Innsbruck, where I was solely responsible for all hardware development from the ground up.",
-      "images": ["images/robocup_2.jpg", "images/robocup_3.jpg", "images/robocup_4.jpg", "images/robocup_5.jpg", "images/robocup_6.jpg", "images/robocup_7.jpg", "images/robocup_8.jpg", "images/robocup_9.jpg"]
+      "images": ["images/robocup_6.jpg", "images/robocup_2.jpg", "images/robocup_3.jpg", "images/robocup_4.jpg", "images/robocup_5.jpg", "images/robocup_7.jpg", "images/robocup_8.jpg", "images/robocup_10.jpg", "images/robocup_11.jpg"]
     }
   ]
 };
